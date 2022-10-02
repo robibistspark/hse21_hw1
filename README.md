@@ -17,3 +17,13 @@ mgstepanyants@bioinflab-2:~$ seqtk sample -s124 oil_R2.fastq 5000000 > sub2.fast
 mgstepanyants@bioinflab-2:~$ seqtk sample -s124 oilMP_S4_L001_R1_001.fastq 1500000 > matep1.fastq
 mgstepanyants@bioinflab-2:~$ seqtk sample -s124 oilMP_S4_L001_R2_001.fastq 1500000 > matep2.fastq
 ```
+
+### FastQC (to the special folder)
+```bash
+ls sub* matep* | xargs -tI{} fastqc -o fastqc {}
+```
+
+### MultiQC (to the special folder)
+```bash
+multiqc -o multiqc fastqc
+```
