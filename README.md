@@ -33,3 +33,20 @@ multiqc -o multiqc fastqc
 ![image](https://user-images.githubusercontent.com/71763293/193472515-662bfe96-7643-4870-85f6-dc14ae100ecc.png)
 ![image](https://user-images.githubusercontent.com/71763293/193472527-39b09e54-fd99-43a4-9a3a-3be99f6077d7.png)
 
+### Trimmed FastQC
+```bash
+mkdir fastqc_trimmed
+ls sub* matep*| xargs -tI{} fastqc -o fastqc_trimmed {}
+```
+
+### Trimmed MultiQC
+```bash
+mkdir multiqc_trimmed
+multiqc -o multiqc_trimmed fastqc_trimmed
+```
+
+### Trimmed MultiQC report
+![image](https://user-images.githubusercontent.com/71763293/193473296-bc451ef7-c9a8-47c4-9fce-45c26f0509cc.png)
+![image](https://user-images.githubusercontent.com/71763293/193473306-8775a984-578f-4ef3-a642-3244112e6c6d.png)
+![image](https://user-images.githubusercontent.com/71763293/193473314-708ccdd2-9d86-424b-97fd-7e52333bf9e0.png)
+
