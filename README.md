@@ -50,3 +50,7 @@ multiqc -o multiqc_trimmed fastqc_trimmed
 ![image](https://user-images.githubusercontent.com/71763293/193473306-8775a984-578f-4ef3-a642-3244112e6c6d.png)
 ![image](https://user-images.githubusercontent.com/71763293/193473314-708ccdd2-9d86-424b-97fd-7e52333bf9e0.png)
 
+### Platanus assemble
+```bash
+time platanus assemble -o Poil -f sub1.fastq.trimmed sub2.fastq.trimmed 2> assemble.log
+```
