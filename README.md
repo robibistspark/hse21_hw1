@@ -27,3 +27,9 @@ ls sub* matep* | xargs -tI{} fastqc -o fastqc {}
 ```bash
 multiqc -o multiqc fastqc
 ```
+
+### MultiQC report
+![image](https://user-images.githubusercontent.com/71763293/193472430-704bd9ac-a932-4819-b388-8dd5cd0fb620.png)
+![image](https://user-images.githubusercontent.com/71763293/193472515-662bfe96-7643-4870-85f6-dc14ae100ecc.png)
+![image](https://user-images.githubusercontent.com/71763293/193472527-39b09e54-fd99-43a4-9a3a-3be99f6077d7.png)
+
