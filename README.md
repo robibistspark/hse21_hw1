@@ -91,3 +91,5 @@ seqtk sample -s124 oilMP_S4_L001_R2_001.fastq 150000 > matep4.fastq
 ![image](https://user-images.githubusercontent.com/71763293/193901973-e1c439d2-dce4-437d-89af-2c96322e670a.png)
 ![image](https://user-images.githubusercontent.com/71763293/193902016-371d08bd-bfaa-4f81-a6ee-57e834ba8d2e.png)
 ![image](https://user-images.githubusercontent.com/71763293/193902073-196cab83-01e2-47cf-a9bf-5ea242852d78.png)
+
+### См. Юпитер ноутбук Bonus analysis.ipynb в папке src. Как и следовало ожидать, когда я выбрал чтения меньшей длины, количество контигов и скаффолдов стало больше, метрики N50 стали меньше, длины самого длинного контига и скаффолда стали меньше, а количество и длина гэпов увеличились - всё это свидетельствует о понижении качества сборки.
