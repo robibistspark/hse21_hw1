@@ -64,3 +64,12 @@ time platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fastq.trimmed sub2.fa
 ```bash
 time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 matep1.fastq.int_trimmed matep2.fastq.int_trimmed 2> gapclose.log
 ```
+
+## Бонусная часть
+### Extracting shorter sequences
+```bash
+seqtk sample -s124 oil_R1.fastq 500000 > sub3.fastq
+seqtk sample -s124 oil_R2.fastq 500000 > sub4.fastq
+seqtk sample -s124 oilMP_S4_L001_R1_001.fastq 150000 > matep3.fastq
+seqtk sample -s124 oilMP_S4_L001_R2_001.fastq 150000 > matep4.fastq
+ ```
