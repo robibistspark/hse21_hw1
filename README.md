@@ -74,7 +74,8 @@ time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2
 ### См. Юпитер ноутбук Analysis.ipynb в папке src.
 
 ## Бонусная часть
-### Я использовал чтения pair-end длиной 500'000 и mate pairs длиной 150000. Команды далее аналогичные, так что все их не привожу.
+### Я использовал чтения pair-end длиной 500'000 и mate pairs длиной 150000. Команды далее аналогичные (менялись только названия файлов), так что впривожу только первые.
+
 ```bash
 seqtk sample -s124 oil_R1.fastq 500000 > sub3.fastq
 seqtk sample -s124 oil_R2.fastq 500000 > sub4.fastq
