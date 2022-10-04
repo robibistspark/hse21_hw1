@@ -18,6 +18,12 @@ seqtk sample -s124 oilMP_S4_L001_R1_001.fastq 1500000 > matep1.fastq
 seqtk sample -s124 oilMP_S4_L001_R2_001.fastq 1500000 > matep2.fastq
 ```
 
+### Platanus trim
+```bash
+platanus_trim sub*
+platanus_internal_trim matep*
+```
+
 ### FastQC (to the special folder)
 ```bash
 ls sub* matep* | xargs -tI{} fastqc -o fastqc {}
