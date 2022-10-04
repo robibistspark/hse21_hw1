@@ -71,11 +71,23 @@ time platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fastq.trimmed sub2.fa
 time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 matep1.fastq.int_trimmed matep2.fastq.int_trimmed 2> gapclose.log
 ```
 
+### См. Юпитер ноутбук Analysis.ipynb в папке src.
+
 ## Бонусная часть
-### Extracting shorter sequences
+### Я использовал чтения pair-end длиной 500'000 и mate pairs длиной 150000. Команды далее аналогичные, так что все их не привожу.
 ```bash
 seqtk sample -s124 oil_R1.fastq 500000 > sub3.fastq
 seqtk sample -s124 oil_R2.fastq 500000 > sub4.fastq
 seqtk sample -s124 oilMP_S4_L001_R1_001.fastq 150000 > matep3.fastq
 seqtk sample -s124 oilMP_S4_L001_R2_001.fastq 150000 > matep4.fastq
  ```
+ 
+ ### MultiQC
+![image](https://user-images.githubusercontent.com/71763293/193901637-33f74d12-0459-4654-85ff-c7362641d4e9.png)
+![image](https://user-images.githubusercontent.com/71763293/193901720-a4a3294e-3165-477c-b093-a9af1eb2b84d.png)
+![image](https://user-images.githubusercontent.com/71763293/193901774-1d3d2d40-c66d-474b-aa9c-d9dbe76ba1b4.png)
+
+### MultiQC для подрезанных чтений
+![image](https://user-images.githubusercontent.com/71763293/193901973-e1c439d2-dce4-437d-89af-2c96322e670a.png)
+![image](https://user-images.githubusercontent.com/71763293/193902016-371d08bd-bfaa-4f81-a6ee-57e834ba8d2e.png)
+![image](https://user-images.githubusercontent.com/71763293/193902073-196cab83-01e2-47cf-a9bf-5ea242852d78.png)
