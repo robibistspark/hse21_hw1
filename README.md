@@ -33,16 +33,16 @@ multiqc -o multiqc fastqc
 ![image](https://user-images.githubusercontent.com/71763293/193472515-662bfe96-7643-4870-85f6-dc14ae100ecc.png)
 ![image](https://user-images.githubusercontent.com/71763293/193472527-39b09e54-fd99-43a4-9a3a-3be99f6077d7.png)
 
-### Trimmed FastQC
-```bash
-mkdir fastqc_trimmed
-ls sub* matep*| xargs -tI{} fastqc -o fastqc_trimmed {}
-```
-
 ### Platanus trim
 ```bash
 platanus_trim sub*
 platanus_internal_trim matep*
+```
+
+### Trimmed FastQC
+```bash
+mkdir fastqc_trimmed
+ls sub* matep*| xargs -tI{} fastqc -o fastqc_trimmed {}
 ```
 
 ### Trimmed MultiQC
